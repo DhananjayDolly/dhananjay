@@ -294,7 +294,7 @@ article h2{
 
 .feeds{
     min-width:500px;
-    background-color: #ffffff81;
+    background-color: #ffffff59;
     height: fit-content;
     padding: 10px;
     border-radius: 5px;
@@ -415,12 +415,20 @@ img.logo{
         padding: 10px;
         margin-left: 15px;
     }
+    
+    h1{
+        font-size: 25px;
+    }
 
     .tag{
         margin-top:100px
     }
 
-    h1{
+    .head h1{
+        font-size: 30px;
+    }
+
+    .tag h1{
         font-size: 25px;
     }
 
