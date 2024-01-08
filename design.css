@@ -65,8 +65,8 @@ h1{
 }
 
 .head h1{
-    font-family: 'Rock Salt', cursive;
-    font-weight: 400;
+    
+    font-weight: 600;
 }
 
 .back, .menu, #check{
@@ -259,7 +259,7 @@ article h2{
     width: 100%;
     height: fit-content;
     margin-top: 0px;
-    background-color: rgb(143, 155, 160);
+    background-color: rgb(143, 155, 160)
 }
 
 .feed-cont h3{
@@ -294,7 +294,7 @@ article h2{
 
 .feeds{
     min-width:500px;
-    background-color: #acacac3f;
+    background-color: #ffffff81;
     height: fit-content;
     padding: 10px;
     border-radius: 5px;
