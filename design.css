@@ -67,7 +67,7 @@ body{
     padding: 20px;
     padding-top: 0px;
     margin-left: 30px;
-    color: #FAF9F6;
+    color: #F3A459;
     text-transform: capitalize;
 }
 
@@ -133,7 +133,7 @@ h1{
   }
 
   .tag h1{
-      color:#F0EAD6;
+      color:#B3B3B3;
      }
 
   .tag h2{
@@ -142,10 +142,11 @@ h1{
   }
 
   .calltoaction a{
-    background-color:transparent ;
+    background-color:#F08000;
     padding: 8px;
     color: white;
-    border:#1C39BB solid medium;
+    border:#F08000 solid medium;
+    transition: all .5s linear;
   }
 
   a{
@@ -153,10 +154,10 @@ h1{
  }
 
  .calltoaction a:hover{
-    background-color:#1C39BB ;
+    background-color:transparent ;
     padding: 8px;
     color: white;
-    border:#1C39BB solid thin;
+    border:#F08000 solid thin;
   }
   
 ol li{
@@ -197,6 +198,7 @@ ol li{
 }
 
 .video{
+    margin-top:20px;
     align-items: center;
 }
 
@@ -246,6 +248,12 @@ video{
     margin-top: 1em;
     margin-bottom: 1rem;
     border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.benefitsjr article:hover, .benefitsjr article:active{
+   transform: translateY(-.3em);
+   background-color: rgba(124, 124, 124, 0.3);
 }
 
 article h2{
@@ -285,7 +293,7 @@ article h2{
 }
 
 .h3head{
-    color:#343434;
+    color:#F08000;
     border-bottom: #343434 thin solid;
 }
 
@@ -396,12 +404,20 @@ margin: auto;
 }
 
 .special{
-    color:rgb(157, 183, 255);
+    color:#F3A459;
 }
 
 #submit{
-    background-color: rgb(255, 138, 138);
+    background-color: #F08000;
     font-size: 18px;
+    border-bottom: none;
+    transition: all .5s ease-in-out;
+}
+
+#submit:hover{
+    transform: translateY(-.3em);
+    background-color: #ffbb6d;
+    color: black;
 }
 
 img.logo{
@@ -410,6 +426,7 @@ img.logo{
            height: 30px;
            transition: all .2s ease-in-out;
     margin: 10px; 
+    margin-top: 0px;
 }
 
 img.logo:hover, img.logo:active{
@@ -443,7 +460,7 @@ footer{
 
 footer a{
     color:#acbbfc;
-    text-decoration: underline;
+    text-decoration: ;
 }
 
 @media (max-width:290px){
