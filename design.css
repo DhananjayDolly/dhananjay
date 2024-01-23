@@ -457,10 +457,10 @@ footer a{
 }
 
 
-@media (min-width:290px)and(max-width:450px) {
+@media (min-width:290px)and(max-width:500px) {
 
     .body{
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .head{
@@ -470,7 +470,7 @@ footer a{
     
 
     .tag{
-        margin-top:100px
+        margin-top:80px
     }
 
     
@@ -497,7 +497,7 @@ footer a{
 
 }  
 
-@media (max-width:780px){
+@media (mix-width:500px)and(max-width:780px){
 
     .hero ul li{
         padding: 1em;
