@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt|Shadows+Into+Light|Cedarville+Cursive');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 body{
     margin:0;
     overflow-x: hidden;
@@ -7,11 +8,11 @@ body{
 
 .body{
     margin:0;
-    font-size: 18px;
+    font-size: 20px;
     overflow-x: hidden;
     overflow-y: scroll;
     height: 100vh; 
-    font-family:  Verdana, Tahoma, arial, 'Segoe UI', Geneva, sans-serif ;   
+    font-family:  'montserrat', Arial, Helvetica, sans-serif ;   
     scroll-behavior: smooth;
     perspective: 10px;
 }
@@ -33,7 +34,7 @@ body{
 .hero img{
     position: absolute;
     width:100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     object-position: 90% 25% ;
     z-index: -1;
@@ -46,7 +47,18 @@ body{
     z-index: -1;
     height:100vh;
     transform: translateZ(-5px) scale(1.5);
-    background-color: rgba(37, 32, 32, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: delay 1.5s ease-in-out .5s 1 forwards;
+}
+
+@keyframes delay{
+    0%{
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    100%{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
 }
 
 .head{
@@ -55,18 +67,16 @@ body{
     padding: 20px;
     padding-top: 0px;
     margin-left: 30px;
-    color: rgb(167, 173, 252);
+    color: #FAF9F6;
     text-transform: capitalize;
+}
+
+.head h1{
+    font-weight: 400;
 }
 
 h1{
     text-transform: capitalize;
-    font-family:'Courier New', Courier, monospace;
-}
-
-.head h1{
-    
-    font-weight: 600;
 }
 
 .back, .menu, #check{
@@ -82,35 +92,31 @@ h1{
     list-style: none;
     display: inline;
     margin: 0;
-    padding: 1.5em;
-    border-bottom: rgb(167, 173, 252) 2px outset;
- }
-
- .hero ul li:hover{
-    border-bottom: blue 2px outset;
  }
 
  .hero ul li a{
-    color: white;
+    color: rgb(179, 179, 179);
     text-decoration: none;
+    padding: 1.5em;
  }
 
  .hero ul li a:hover{
-    color: red;
+    color: #0CAFFF;
+    border-bottom: #5072A7 2px outset;
  }
 
  /* Define the font family */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
  .tag{
-    width: clamp(250px, 50%, 400px);
+    width: clamp(250px, 80%, 400px);
     margin:5%;
     margin-top: 0%;
     height: 300px;
     text-transform: capitalize;
     font-family: 'Montserrat', sans-serif;
     opacity: 0; /* Initially hidden */
-    animation: fadeIn 1.4s linear 0s forwards;
+    animation: fadeIn 1.4s linear .5s forwards;
 }
 
 /* Define a keyframes animation to make the text appear */
@@ -119,10 +125,7 @@ h1{
       opacity: 0;
       transform: translateX(50%);
     }
-    50% {
-      opacity: 0.5;
-      
-    }  
+     
     100% {
       opacity: 1;
       transform: translateX(0%);
@@ -130,29 +133,35 @@ h1{
   }
 
   .tag h1{
-      color:rgb(255, 180, 180);
-      font-family: 'Montserrat', sans-serif;
+      color:#F0EAD6;
      }
 
   .tag h2{
-       color:rgb(255, 255, 255);
+       color:#F0EAD6;
+        font-weight: 400;
   }
 
-  .calltoaction{
-    background-color:rgb(167, 173, 252) ;
-    padding: 5px;
-    border-radius: 2px;
-    width:fit-content 
+  .calltoaction a{
+    background-color:transparent ;
+    padding: 8px;
+    color: white;
+    border:#1C39BB solid medium;
   }
 
   a{
-    color: rgb(0, 0, 0);
     text-decoration: none;
  }
+
+ .calltoaction a:hover{
+    background-color:#1C39BB ;
+    padding: 8px;
+    color: white;
+    border:#1C39BB solid thin;
+  }
   
 ol li{
     list-style: circle;
-    color: white;
+    color: #F0EAD6;
     line-height: 1.4em;
 }
 
@@ -160,29 +169,30 @@ ol li{
 .content{
     height: fit-content;
     width: 100vw;
+    padding-top: 20px;
     align-items: center;
     margin: 0;
-    background-color: rgb(143, 155, 160);
+    background-color: #DED9D6;
 }
 
 .content h1{
-    color: rgb(68, 55, 55);
+    color: #202020;
 }
 
 .pas-main h1{
-    color: rgb(250, 222, 179);
+    color: rgb(51, 51, 51);
 }
 
 .pas, .video{
-    width: clamp(300px, 90%, 1000px);
+    width: clamp(270px, 90%, 1000px);
     margin:auto;
     margin-top:10px;
 }
 
 .pas-main{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 2.4fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
+    gap: 1.5rem;
     line-height: 1.5em;
 }
 
@@ -192,7 +202,7 @@ ol li{
 
 .video-main{
     margin: auto;
-    width: clamp(300px, 60%, 450px);
+    width: clamp(270px, 60%, 450px);
 }
 
 video{
@@ -204,11 +214,12 @@ video{
     width: 100%;
     height: fit-content;
     align-items: center;
-    background-color: rgb(86, 93, 105);
+    color: white;
+    background-color: #252525;
 }
 
 .benimg{
-    width: clamp(300px, 90%, 1000px);
+    width: clamp(270px, 90%, 600px);
     margin: auto;
     padding-top: 40px;
 } 
@@ -219,18 +230,18 @@ video{
 }
 
 .benimg img{
-    width: 300px;
+    width: clamp(260px, 90%, 500px);
     border-radius: 20px;
     object-fit: cover;
 }
 
 .benefitsjr{
-    width: clamp(300px, 90%, 1000px);
+    width: clamp(270px, 90%, 1000px);
     margin: auto;
 }
 
 .benefitsjr article{
-    background-color: rgba(219, 219, 215, 0.192);
+    background-color: rgba(66, 66, 66, 0.3);
     padding: 10px;
     margin-top: 1em;
     margin-bottom: 1rem;
@@ -239,8 +250,8 @@ video{
 
 article h2{
     text-transform: capitalize;
-    color: rgb(153, 67, 67);
-    border-bottom: solid rgb(71, 75, 83) thin;
+    color: rgb(156, 156, 156);
+    border-bottom: solid rgb(153, 153, 153) thin;
     width: fit-content;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
@@ -248,9 +259,9 @@ article h2{
 
 .one, .two{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
     margin: auto;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 
@@ -258,25 +269,24 @@ article h2{
 .feed-cont{
     width: 100%;
     height: fit-content;
-    margin-top: 0px;
-    background-color: rgb(143, 155, 160)
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #FFFAFA;
 }
 
 .feed-cont h3{
-    font-weight: 500;
     padding: 10px;
-    padding-top: 40px;
     text-transform: capitalize;
     line-height: 1.8em;
-    color:rgb(26, 25, 25);
+    color:#343434;
     margin: auto;
     width:fit-content;
-    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
 }
 
 .h3head{
-    color:rgb(153, 67, 67);
+    color:#343434;
+    border-bottom: #343434 thin solid;
 }
 
 .feedback{
@@ -293,8 +303,8 @@ article h2{
   }
 
 .feeds{
-    min-width:500px;
-    background-color: #ffffff59;
+    min-width:450px;
+    background-color: #b6b6b659;
     height: fit-content;
     padding: 10px;
     border-radius: 5px;
@@ -316,8 +326,8 @@ img.review{
 
 .about{
     width: 100%;
-    padding-top: 40px;
-    background-color: rgb(61, 67, 80);
+    padding-top: 20px;
+    background-color: rgb(36, 41, 51);
     color: white;
 }
 
@@ -335,12 +345,7 @@ img.review{
 }
 
 .about h1, .about h2{
-    color:rgb(255, 157, 157);
-    font-weight: 500;
-}
-
-.about strong{
-    color: rgb(212, 176, 109);
+    color:#b3c1ff;
     font-weight: 500;
 }
 
@@ -349,48 +354,49 @@ img.review{
 }
 
 .about-one{
-    width: clamp(300px, 90%, 900px);
+    width: clamp(270px, 90%, 900px);
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 2fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 2fr));
+    gap: 1.5rem;
   
 margin: auto;
 }
 
 .about-two{
-    width: clamp(300px, 90%, 900px);
+    width: clamp(260px, 90%, 900px);
     margin: auto;
     padding-bottom: 30px;
 }
 
 #contact{
     width: 100vw;
-    background-color: rgb(1, 1, 46);
+    padding-top: 20px;
+    background-color: rgb(0, 0, 22);
     color: white;
 }
 
 .contact{
-    width: clamp(300px, 90%, 900px);
+    width: clamp(270px, 90%, 900px);
     
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(290px, 2fr));
-        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(265px, 2fr));
+        gap: 1.5rem;
       
     margin: auto;
 }
 
  img.contact{
-    width: 280px;
+    width: 270px;
     object-fit: cover;
     object-position: top;
-    height: 280px;
-    border-radius: 280px;
+    height: 270px;
+    border-radius: 270px;
     margin: 10px;
 }
 
 .special{
-    color:rgb(255, 157, 157);
+    color:rgb(157, 183, 255);
 }
 
 #submit{
@@ -399,16 +405,62 @@ margin: auto;
 }
 
 img.logo{
-    width: 1.2em;
-    height: 1.2em;
+    width: 30px;
+           object-fit: contain;
+           height: 30px;
+           transition: all .2s ease-in-out;
     margin: 10px; 
 }
 
+img.logo:hover, img.logo:active{
+    transform:translateY(-.3em);
+}
 
-@media (max-width:450px) {
+input, textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+  line-height: 2em;
+    transition: all .2s ease-in-out;
+    width: 250px;
+}
 
+input:focus, textarea:focus{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 18px;
+    transform: translateY(-.2em);
+}
+
+footer{
+    padding: 5px;
+    padding-top: 10px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+
+footer a{
+    color:#acbbfc;
+    text-decoration: underline;
+}
+
+@media (max-width:290px){
     .body{
         font-size: 16px;
+    }
+
+    .tag{
+        margin-top:0px;
+    }
+}
+
+
+@media (min-width:290px)and(max-width:450px) {
+
+    .body{
+        font-size: 18px;
     }
 
     .head{
@@ -416,21 +468,14 @@ img.logo{
         margin-left: 15px;
     }
     
-    h1{
-        font-size: 25px;
-    }
 
     .tag{
         margin-top:100px
     }
 
-    .head h1{
-        font-size: 30px;
-    }
+    
 
-    .tag h1{
-        font-size: 25px;
-    }
+    
 
     img.contact{
         width: 220px;
@@ -468,14 +513,18 @@ img.logo{
     .back, .menu {
         display: block;
      }
+
+     .head{
+        margin-left: 5px;
+     }
     
       ul{
         height: 100vh;
-        position: fixed;
-        width: 80vw;
+        position: absolute;
+        width: 85vw;
         font-size: 22px;
         float: none;
-        background-color: rgba(0, 0, 0, 0.788);
+        background-color: rgba(0, 0, 0, 0.9);
         z-index: 1;
         transition: .8s ease-in-out;
         left: -150vw;
@@ -486,7 +535,6 @@ img.logo{
         display: block;
         margin: 0;
         padding: 1.5em;
-        border-bottom: rgb(167, 173, 252) 2px outset;
      }
 
      #check:checked ~ .nav ul{
@@ -496,11 +544,10 @@ img.logo{
       .back{
         float:right;
         font-size: 30px;
-        padding-left: 2px;
+        padding: 5px;
+        border: white solid medium;
         display: block;
         color:white;
-        padding-right: 2px;
-        border-radius: 3px;
         cursor: pointer;
       }
     
@@ -509,14 +556,14 @@ img.logo{
         position: absolute;
         padding:4px;
         padding-bottom: 4px;
-        border:rgb(167, 173, 252) solid thin;
+        border:rgb(228, 230, 255) solid thin;
         margin-top: 25px;
         margin-right: 15px;
         cursor: pointer;
         line-height: 32px;
         color: rgb(255, 255, 255);
         font-size: 40px;
-        left: 90%;
+        left: 85%;
        }
     
 }
