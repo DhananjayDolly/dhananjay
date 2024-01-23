@@ -459,6 +459,10 @@ footer a{
 
 @media (min-width:290px)and(max-width:500px) {
 
+    body{
+        font-size: 17px;
+    }   
+
     .body{
         font-size: 17px;
     }
