@@ -390,6 +390,7 @@ margin: auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(265px, 2fr));
         gap: 1.5rem;
+        line-height: 1.6em;
       
     margin: auto;
 }
@@ -410,6 +411,8 @@ margin: auto;
 #submit{
     background-color: #F08000;
     font-size: 18px;
+    color: black;
+    text-indent: 0rem;
     border-bottom: none;
     transition: all .5s ease-in-out;
 }
@@ -436,6 +439,9 @@ img.logo:hover, img.logo:active{
 input, textarea{
     background-color: transparent;
     border: none;
+    font-size: 16px;
+    text-indent: 1rem;
+    color: lightslategray;
     border-bottom: white thin solid;
   line-height: 2em;
     transition: all .2s ease-in-out;
@@ -460,7 +466,6 @@ footer{
 
 footer a{
     color:#acbbfc;
-    text-decoration: ;
 }
 
 @media (max-width:290px){
