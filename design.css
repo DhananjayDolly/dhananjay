@@ -141,12 +141,21 @@ h1{
         font-weight: 400;
   }
 
+  .calltoaction{
+    transition: transform 0.3s linear;
+    width: fit-content;
+  }
+
+  .calltoaction:hover{
+    transform: translateY(-.3em);
+  }  
+
+
   .calltoaction a{
     background-color:#F08000;
     padding: 8px;
     color: white;
     border:#F08000 solid medium;
-    transition: all .5s linear;
   }
 
   a{
@@ -154,10 +163,9 @@ h1{
  }
 
  .calltoaction a:hover{
-    background-color:transparent ;
-    padding: 8px;
-    color: white;
-    border:#F08000 solid thin;
+    background-color:#ff9e2f;
+    color: rgb(255, 255, 255);
+    border:#ff9e2f solid medium;
   }
   
 ol li{
@@ -233,8 +241,29 @@ video{
 
 .benimg img{
     width: clamp(260px, 90%, 500px);
-    border-radius: 20px;
+    border-radius: 10px;
     object-fit: cover;
+    animation: float 3s linear 0s infinite forwards; 
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0em);
+        box-shadow: 2px 2px 10px 5px #424242,
+    -2px -2px 10px 5px #424242; 
+    }
+
+    50%{
+        transform: translateY(.4em);
+        box-shadow: -6px -6px 10px 5px #424242,
+    0px 0px 10px 5px #424242; 
+    }
+
+    100%{
+        transform: translateY(0em);
+        box-shadow: 3px 3px 10px 5px #424242,
+    -3px -3px 10px 5px #424242; 
+    }
 }
 
 .benefitsjr{
@@ -424,16 +453,16 @@ margin: auto;
 }
 
 img.logo{
-    width: 30px;
+    width: 40px;
            object-fit: contain;
-           height: 30px;
+           height: 40px;
            transition: all .2s ease-in-out;
     margin: 10px; 
     margin-top: 0px;
 }
 
 img.logo:hover, img.logo:active{
-    transform:translateY(-.2em);
+    transform:translateY(-.1rem);
 }
 
 input, textarea{
@@ -450,10 +479,13 @@ input, textarea{
 
 input:focus, textarea:focus{
     color: white;
-    font-family:'Courier New', Courier, monospace;
     font-weight: normal;
     font-size: 18px;
     transform: translateY(-.2em);
+}
+
+textarea{
+    line-height: 1.3rem;
 }
 
 footer{
@@ -499,9 +531,6 @@ footer a{
         margin-top:80px
     }
 
-    
-
-    
 
     img.contact{
         width: 220px;
