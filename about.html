@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+    <head>                                                                            <!--head-->
+
+        <meta charset="UTF-8">                                                        <!--meta-->
+        <meta name="viewport" content="width=device-width , initial-scale=1.0 , maximum-scale=1.0 , user-scalable=no">
+        <meta name="keywords" content="">
+        <meta name="description" content=" ">
+        <title>  </title>                                                             <!--title-->
+
+        <link href="" type="text/css" rel="stylesheet" />                             <!--link-->
+        <link href="" type="text/css" rel="stylesheet" />
+
+        <style type="text/css">                       
+         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+ 
+        body{
+            font-size: 19px;
+            line-height: 1.4em;
+            font-family: 'montserrat', Arial, Helvetica, sans-serif;
+        }
+
+        img.profile{
+            max-width: 450px;
+            min-width: 250px;
+            border-radius: 20px;
+        }
+
+        .body{
+            align-content: center;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            display: grid;
+            width: 100vw;
+            background-color: rgba(12, 12, 12, 0.89);
+            color: whitesmoke;
+        }
+
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .head{
+            display: grid;
+            width: clamp(265px, 90%, 1100px);
+            gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
+        }
+
+
+        .head h1{
+            padding: 20px;
+            color:#F08000;
+            width:  fit-content;           
+            text-transform: capitalize;
+           
+        }
+
+        .back{
+            justify-self:left;
+            padding-top: 20px;
+        }
+
+        .back p a{
+            color:rgb(177, 177, 177);
+            text-decoration: none;
+            padding: 30px;
+            padding-top: 30px;
+            text-transform: capitalize;
+        }
+
+        .about{
+            display: grid;
+            width: clamp(265px, 90%, 1100px);
+            gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
+        }    
+
+        article.two p{
+            text-align: justify;
+            margin: 20px;
+        }
+
+        .about article:nth-child(2), .head article:nth-child(2){
+            order: 1;
+        }
+
+        .about article:nth-child(1), .head article:nth-child(1){
+            order: 2;
+        }
+
+
+        img.logo{
+           width: 40px;
+           object-fit: contain;
+           height: 40px;
+           margin: 10px;
+           transition: all .2s ease-in-out;
+           
+}
+
+img.logo:hover, img.logo:active{
+    transform:translateY(-.1rem);
+}
+
+
+
+        @media (max-width:620px) {
+            body{
+                font-size: 17px;
+            }
+
+            .about article:nth-child(2), .head article:nth-child(2){
+            order: 2;
+        }
+
+        .about article:nth-child(1), .head article:nth-child(1){
+            order: 1;
+        }
+
+        }
+
+
+
+        </style>                                                                        <!--style-->
+        
+    </head>
+
+    <body>                                                                             <!--body-->
+
+        <div class="body">
+
+            <div class="back"><p><a href="dance.html">go back</a></p></div>
+
+        <div class="head">
+            <article><h1>mr. dhananjay</h1></article>
+            
+        </div>
+
+        <div class="about">
+            <article><img class="profile" src="about.jpg" alt="dhananjay profile photo"><br/>
+                <p class="social">Contact me on</p>
+                    <p> <a href="https://www.instagram.com/my_self_dolly?igsh=bXJwbmNiY3RrNjBm"><img src="instagramwhite.png" class="logo insta"></a> <a href="mailto:dhanudevarajd.77@gmail.com"><img src="emailwhite.png" class="logo email"></a> </p>
+            </article>
+            <article class="two"><p>Hello and welcome! I'm Dhananjay, your dance companion on a journey that spans over 15 years in the rhythmic world. With more than 5 years of experience as a passionate choreographer, my dance adventures have taken me to stages all across the country, where I've not only showcased my skills but also had the honor of bagging some fantastic prizes. Now, I am thrilled to extend my love for the artistry of dance to you, delving into the realms of contemporary hip hop, traditional folk, and the ever-dynamic western dance forms.</p>
+                     
+                     <p>Whether you're an experienced dancer or stepping onto the dance floor for the first time, join me in this exhilarating journey. Together, let's explore, create, and dance our way through the enchanting realms of contemporary hip hop, folk, and western dance forms. Because, after all, dance is not just about the steps; it's about the stories we tell with our bodies, and I can't wait to share these stories with you!</p>
+            </article>
+        </div>
+
+        </div>
+
+    </body>
+
+</html>
